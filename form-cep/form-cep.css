@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --cor-principal: #bafdba;
+    --cor-secundaria: #44c744;
+    --fonte-principal: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--cor-principal);
+    min-height: 100vh;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    color: black;
+	font-size: 18px;
+}
+
+.container{
+    background-color: white;
+    width: 60%;
+    margin: 3em auto;
+    padding: 3em;
+    text-align: left;
+    border-radius: 15px;
+}
+
+.titulo{
+    margin: 1em 0;
+    font-weight: 400;
+}
+
+.div{
+    position: relative;
+    margin: 30px;
+}
+
+label {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    cursor: text;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: 0;
+    width: 100%;
+    padding: 5px;
+    font-family: var(--fonte-principal);
+}
+
+input:focus, input:valid{
+    border-bottom: 1px solid var(--cor-secundaria);
+}
+
+input:focus ~ label, input:valid ~ label{
+    transform: translateY(-20px);
+    font-size: 16px;
+    color: var(--cor-secundaria);
+    transition: 0.3s; 
+}
+ 
+.label-data{
+    transform: translateY(-20px);
+}
+
+.botao{
+    margin-left: 35%;
+    font-family: var(--fonte-principal);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    background-color: var(--cor-secundaria);
+    padding: 1em;
+    width: 30%;
+    font-size: 18px;
+    border-radius: 15px;
+}
+
+.botao:hover{
+    cursor: pointer;
+}
+
+header{
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 3px 0 5px gray;
+}
+
+.caixa {
+	width: 940px;
+	margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+	width: 3em;
+}
+
+nav ul{
+	list-style: none;
+    display: flex;
+}
+
+nav a{
+	text-decoration: none;
+	margin-right: 2em;
+    color: black;
+    text-transform: uppercase;
+}
+
+.invisivel{
+    display: none;
+}
+
+.label-erro, input:invalid ~ .label-erro{
+    transform: translateY(-40px);
+    font-size: 16px;
+    color: crimson;
+    transition: 0.3s;
+}
+
+input:focus ~ .label-erro{
+    transform: translateY(-40px);
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.msg-erro{
+    font-size: 14px;
+    color: crimson;
+}
+
+.campo-erro{
+    border-bottom: 1px solid crimson;
+}
