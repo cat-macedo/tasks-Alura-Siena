@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+
+@import url("styles/header.css");
+@import url("styles/sobre.css");
+@import url("styles/produtos.css");
+@import url("styles/form.css");
+@import url("styles/contato.css");
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --fonte-principal: 'Raleway';
+    --cor-cabecalho: #105057;
+    --cor-item-sobre: #571710;
+    /* degrade: */
+    --primeiro-degrade: #fbcfae;
+    --segundo-degrade: #fedfc9;
+    --terceiro-degrade: #ffefe4;
+    --branco: white;
+    --cinza-claro: #d5d1d1;
+    --cinza: #9a9898;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--fonte-principal);
+}
+
+/* @media screen and (min-width: 480px),(max-width: 1023px){
+    .cabecalho-logo{
+        width: 42%;
+    }
+
+    .banner{
+        margin-top: 3.7em;
+    }
+} */

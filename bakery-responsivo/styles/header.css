@@ -1,0 +1,130 @@
+.cabecalho{
+    background-color: var(--cor-cabecalho);
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0.5em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: relative; */
+}
+
+.cabecalho-logo{
+    width: 60%;
+}
+
+.cabecalho-menu-hamburguer{
+    height: 24px;
+    width: 24px;
+    background-image: url("../img/Menu-Aberto.svg");
+    display: inline-block;
+    margin-right: 1.5em;
+}
+
+.lista-menu{
+    list-style-type: none;
+    display: none;
+}
+
+.lista-menu-link{
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--cor-cabecalho);
+    text-transform: uppercase;
+}
+
+.lista-menu-item{
+    background-color: var(--branco);
+    padding: 0.5em 1em;
+    border: 1px solid var(--cor-cabecalho);
+    border-top: none;
+}
+
+.menu-botao{
+    display: none;
+}
+
+.menu-botao:checked ~ .lista-menu{
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 50%;
+}
+
+.menu-botao:checked ~ .menu-rotulo > .cabecalho-menu-hamburguer{
+    background-image: url("../img/close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner{
+    width: 100%;
+    margin-top: 3.5em;
+}
+
+.item-desktop{
+    display: none;
+}
+
+@media screen and (min-width: 500px){
+    .cabecalho-logo{
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .cabecalho-logo{
+        width: 30%;
+        margin-left: 1em;
+    }
+
+    .cabecalho-menu-hamburguer{
+        margin-right: 2.5em;
+    }
+
+    .menu-botao:checked ~ .lista-menu{
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1365px){
+    .cabecalho{
+        justify-content: space-around;
+    }
+    
+    .cabecalho-menu-hamburguer{
+        display: none;
+    }
+
+    .lista-menu{
+        display: flex;
+    }
+
+    .lista-menu-item{
+        background-color: transparent;
+    }
+
+    .lista-menu-link{
+        color: var(--branco);
+    }
+
+    .lista-menu-link:hover{
+        text-decoration: underline;
+    }
+
+    .cabecalho-logo{
+        width: 25%;
+    }
+
+    .item-desktop{
+        display: block;
+    }
+
+    .item-mobile{
+        display: none;
+    }
+}

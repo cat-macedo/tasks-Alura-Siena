@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Casa de pães Santa Catarina</title>
+        <link rel="icon" href="img/icone-pao.png">
+        <link rel="stylesheet" href="reset.css"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="geral.css"> 
+        <meta name="viewport" content="width=device-width"> 
+    </head>
+
+    <body>
+
+        <!-- <div data-tf-popover="s4nWTWSn" data-tf-custom-icon="" data-tf-button-color="#571710" data-tf-tooltip="Olá, fale conosco!" data-tf-chat data-tf-medium="snippet" style="all:unset;"></div><script src="//embed.typeform.com/next/embed.js"></script> -->
+
+        <header class="cabecalho">
+            <img class="cabecalho-logo" src="img/escrito.png">
+            <input type="checkbox" id="menu" class="menu-botao">
+            <label for="menu" class="menu-rotulo">
+                <span class="cabecalho-menu-hamburguer"></span>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu-item">
+                    <a class="lista-menu-link" href="#sobre">Sobre</a>
+                </li>
+                
+                <li class="lista-menu-item item-mobile">
+                    <a class="lista-menu-link" href="#produtos">Serviços</a>
+                </li>
+
+                <li class="lista-menu-item item-desktop">
+                    <a class="lista-menu-link" href="#produtos-2">Serviços</a>
+                </li>
+                
+                <li class="lista-menu-item">
+                    <a class="lista-menu-link" href="#form">Pedidos</a>
+                </li>
+                
+                <li class="lista-menu-item">
+                    <a class="lista-menu-link" href="#endereco">Endereço</a>
+                </li>
+                
+                <li class="lista-menu-item">
+                    <a class="lista-menu-link" href="#contato">Contato</a>
+                </li>
+            </ul>
+        </header>
+
+        <img class="banner" src="img/fachada-logo-scale.png">
+
+        <section class="sobre-nos" id="sobre">
+            <h1 class="titulo-sobre">Casa de pães Santa Catarina</h1>
+            <ul class="lista-sobre">
+                <li class="lista-sobre-item item-sobre-obs">
+                    <h3 class="lista-sobre-titulo">Estamos em Guarulhos</h3>
+                    <p class="lista-sobre-texto">2 unidades para atender toda a região</p>
+                </li>
+                
+                <li class="lista-sobre-item item-sobre-borda">
+                    <h3 class="lista-sobre-titulo">Padaria Tradicional</h3>
+                    <p class="lista-sobre-texto">Oferemos mix completo de produtos, porém a prioridade é a panificação.</p>
+                </li>
+                
+                <li class="lista-sobre-item item-sobre-borda">
+                    <h3 class="lista-sobre-titulo">Refeições</h3>
+                    <p class="lista-sobre-texto">Contamos com opções a la carte e buffet.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="produtos" id="produtos">
+            <h2 class="titulo-produtos">Produtos e serviços</h2>
+            <p class="texto-produtos">Conheça um pouco mais do que fazemos</p>
+
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img class="img-pizza" src="img/pizza.jpg">
+                        <h3 class="titulo-slide">Pizzas</h3>
+                        <p class="texto-slide">Menu de pizzas feitas no forno à lenha com excelente qualidade no preparo.</p>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <img class="img-pizza" src="img/buffet.jpg">
+                        <h3 class="titulo-slide">Restaurante</h3>
+                        <p class="texto-slide">Diariamente oferecemos almoço no buffet. Gastronomia com incrível variedade.</p>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <img class="img-pizza" src="img/bolo2.jpg">
+                        <h3 class="titulo-slide">Encomendas para festas</h3>
+                        <p class="texto-slide">Atendimento empresarial, eventos, itens de coffee break e tudo para festas.</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="img-pizza" src="img/doces.jpg">
+                        <h3 class="titulo-slide">Doces autorais</h3>
+                        <p class="texto-slide">Doces especiais feitos especialmente e exclusivamente para você.</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="img-pizza" src="img/chocolate.jpg">
+                        <h3 class="titulo-slide">Chocolaterie</h3>
+                        <p class="texto-slide">Nossas trufas, bombons e barras têm o sabor do chocolate belga e francês.</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="img-pizza" src="img/sorvete.jpg">
+                        <h3 class="titulo-slide">Sorveteria</h3>
+                        <p class="texto-slide">Venha se deliciar com nosso gelatto fabricação própria.</p>
+                    </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+        <!-- para desktop -->
+        <section class="produtos-desktop" id="produtos-2">
+            <h1 class="titulo-produtos">Produtos e serviços</h1>
+            <p class="texto-produtos">Conheça um pouco mais do que fazemos</p>
+            <div class="caixa-produtos">
+                <ul class="lista-produtos">
+                    <li class="item-produtos">
+                        <img class="img-pizza" src="img/pizza.jpg">
+                        <h3 class="produtos-titulo">Pizzas</h3>
+                        <p>Menu de pizzas feitas no forno à lenha com excelente qualidade no preparo.</p>
+                    </li>
+
+                    <li class="item-produtos">
+                        <img class="img-buffet" src="img/buffet.jpg">
+                        <h3 class="produtos-titulo">Restaurante</h3>
+                        <p>Diariamente oferecemos almoço no buffet. Gastronomia com incrível variedade.</p>
+                    </li>
+
+                    <li class="item-produtos">
+                        <img class="img-bolo" src="img/bolo2.jpg">
+                        <h3 class="produtos-titulo">Encomendas para festas</h3>
+                        <p>Atendimento empresarial, eventos, itens de coffee break e tudo para festas.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="produtos-desktop produtos-desktop-2">
+            <div class="caixa-produtos">
+                <ul class="lista-produtos">
+                    <li class="item-produtos">
+                        <img class="img-doces" src="img/doces.jpg">
+                        <h3 class="produtos-titulo">Doces autorais</h3>
+                        <p>Doces especiais feitos especialmente e exclusivamente para você.</p>
+                    </li>
+
+                    <li class="item-produtos">
+                        <img class="img-chocolate" src="img/chocolate.jpg">
+                        <h3 class="produtos-titulo">Chocolaterie</h3>
+                        <p>Nossas trufas, bombons e barras têm o sabor do chocolate belga e francês.</p>
+                    </li>
+
+                    <li class="item-produtos">
+                        <img class="img-sorvete" src="img/sorvete.jpg">
+                        <h3 class="produtos-titulo">Sorveteria</h3>
+                        <p>Venha se deliciar com nosso gelatto fabricação própria.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="pedidos" id="form">
+            <h2 class="titulo-pedidos">Faça seu pedido</h2>
+            <div class="container-form">
+                <iframe class="iframe-form" src="https://docs.google.com/forms/d/e/1FAIpQLSeTg_3IMCOLT0Zt-eFdSZixKtXTqOz1Mr0JGzIeTp8OWFuDFQ/viewform?embedded=true"
+                width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+            </div>
+        </section>
+
+        <section class="mapa" id="endereco">
+            <h2 class="titulo-mapa">Nosso estabelecimento</h2>
+            <div class="container-mapa">
+                <iframe class="iframe-mapa" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d117095.11055237046!2d-46.6064386793164!3d-23.48850463215116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1salura%20sao%20paulo!5e0!3m2!1spt-BR!2sbr!4v1656099821032!5m2!1spt-BR!2sbr"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+        <section class="contato" id="contato">
+            <img class="logo-contato" src="img/escrito-azul.png">
+            <ul class="lista-contato">
+                <div class="lista-contato-item">
+                    <h3 class="lista-contato-titulo">Telefone</h3>
+                    <p class="lista-contato-texto">(00)91234-5678</p>
+                    <button class="botao-zap"> 
+                        <a target="_blank" href="https://api.whatsapp.com/send?phone=5516993456325"> 
+                            <img class="icone-zap" src="img/whatsapp.png"> 
+                        </a> 
+                    </button>
+                </div>
+                <div class="lista-contato-item">
+                    <h3 class="lista-contato-titulo">Endereço</h3>
+                    <p class="lista-contato-texto">Av. Paulista, 1000 <br> São Paulo - SP</p>
+                </div>
+            </ul>
+        </section>
+
+        <footer class="rodape">
+            <p>&copy; Casa de pães Santa Catarina 2022</p> 
+            <p>Images by Unsplash and Pexels</p>
+            <p>Cat's Design</p>
+        </footer>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                spaceBetween: 10,
+                slidesPerView: 2,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+    </body>
+</html>
