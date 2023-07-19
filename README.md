@@ -1,6 +1,7 @@
 <h2 align="center">Descrição do projeto</h2>
 <p align="center">Tarefas desenvolvidas através de cursos da Alura como bolsista pela empresa Siena em 2022</p>
 
+
 <h3>Bakery-responsivo</h3>
 Utilizei as linguagens HTML5 e CSS e a estratégia mobile-first para uma melhor responsividade. O site conta com um menu com rolagem, seções de produtos e serviços, implementação de um Google Forms para pedidos e da localização através do Google Maps, além de uma seção para contato e a utilização da plataforma TypeForm para integrar um formulário online.
 
